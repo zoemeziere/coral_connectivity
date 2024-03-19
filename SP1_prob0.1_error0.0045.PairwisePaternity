@@ -1,0 +1,16 @@
+OffspringID,CandidateID,Confidence
+BLCH152A-BLCH152A,Spis-OCCH-659-Spis-O,95%
+Spis-CBLM-1259-Spis-,Spis-CBLM-1261-Spis-,95%
+Spis-CBLM-1261-Spis-,Spis-CBLM-1259-Spis-,95%
+Spis-CBLM-1262-Spis-,Spis-CBLM-1261-Spis-,95%
+Spis-CBLM-1271-Spis-,Spis-CBLM-1261-Spis-,95%
+Spis-OCCH-659-Spis-O,BLCH152A-BLCH152A,95%
+Spis-ONLI-441-Spis-O,Spis-ONLI-445-Spis-O,95%
+Spis-ONLI-442-Spis-O,Spis-ONLI-445-Spis-O,95%
+Spis-ONLI-445-Spis-O,Spis-ONLI-441-Spis-O,95%
+Spis-ONLI-456-Spis-O,Spis-ONLI-798-Spis-O,95%
+Spis-ONLI-798-Spis-O,Spis-ONLI-456-Spis-O,95%
+Spis-PAPE-529-Spis-P,Spis-PAPE-530-Spis-P,95%
+Spis-PAPE-530-Spis-P,Spis-PAPE-529-Spis-P,95%
+Spis-PAPE-538-Spis-P,Spis-PAPE-540-Spis-P,95%
+Spis-PAPE-540-Spis-P,Spis-PAPE-538-Spis-P,95%
