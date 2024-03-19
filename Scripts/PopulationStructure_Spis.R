@@ -7,11 +7,8 @@ library(tidyr)
 library(ggplot2)
 library(vegan)
 
-###Genomic data
+###Genomic data and metadata
 StyloTaxon1_genlight <- gl.read.vcf("StyloTaxon1_SF095_LD.vcf")
-SpisTaxon1_genind <- gl2gi(StyloTaxon1_genlight)
-
-###Metadata
 StyloTaxon1_metadata <- read.csv("StyloTaxon1_metadata.csv", header = TRUE) %>% arrange(Sample_name)
 StyloTaxon1_metadata$locality <- factor(StyloTaxon1_metadata$locality, levels = c("Lizard", "Moore", "Pelorus", "Davies", "Chicken", "Little Broadhurst", "Heron", "Lady Musgrave"))
 StyloTaxon1_coordinates <- as.data.frame(cbind("lon" = StyloTaxon1_metadata$decimalLongitude, "lat" = StyloTaxon1_metadata$decimalLatitude))
@@ -56,31 +53,4 @@ ggplot(StyloTaxon1_K9_admix, aes(factor(Sample_name), probK9, fill = factor(V)))
     panel.grid = element_blank(),
     legend.position="none",
     plot.margin = unit(c(0, 0, 0, 0), "null"))  
-
-#cross validation errors
-cv_errors <- read.csv("cv_errors.csv") 
-plot(cv_errors)
-
-####Isolation by distance 
-
-#Create input file for Genepop
-StyloTaxon1_pop_mercator <- read.csv("lonlat_StyloTaxon1_pop.csv")
-StyloTaxon1_pop_genlight_mercator <- StyloTaxon1_genlight
-StyloTaxon1_pop_genlight_mercator@ind.names <- StyloTaxon1_pop_mercator$lonlat
-StyloTaxon1_pop_genlight_mercator@pop <- as.factor(StyloTaxon1_pop_mercator$pop)
-StyloTaxon1_pop_genepop_mercator <- gl2genepop(StyloTaxon1_pop_genlight_mercator)
-write.table(StyloTaxon1_pop_genepop_mercator, file = "StyloTaxon1_pop_genepop_mercator.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
-
-#Then use following command in terminal
-#sed 's/pop.*_//' StyloTaxon1_pop_genepop_mercator.txt > StyloTaxon1_pop_genepop_mercator2.txt
-
-#Plot IBD regression
-Spis_IBD <- read.csv("IBD_Spis.csv")
-ggplot() + 
-  geom_point(data=Spis_IBD, aes(x = geodist, y = gendist), size=2, shape=16, alpha=1) + 
-  geom_smooth(data=Spis_IBD, aes(x = geodist, y = gendist), method = lm, colour="black", size=0.5) + 
-  ylab("Genetic distance (Rousset's a)") +
-  xlab("Ln (geographic distance (m))") +
-  theme_Publication()
-
 
