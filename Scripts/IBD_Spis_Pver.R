@@ -49,7 +49,7 @@ PverTaxon1A_genepop_mercator <- gl2genepop(PverTaxon1A_genlight_mercator)
 write.table(PverTaxon1A_genepop_mercator, file = "PverTaxon1A_genepop_mercator.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
 
 #Then use following command in terminal and run Genepop with PverTaxon1A_genlight_mercator2.txt
-#sed 's/pop.*_//' PverTaxon1A_genlight_mercator.txt > PverTaxon1A_genlight_mercator2.txt
+#sed 's/pop.*_//' PverTaxon1A_genepop_mercator.txt > PverTaxon1A_genepop_mercator2.txt
 
 ##Plot IBD regression using Genepop outputs in IBD_Pver.csv
 
