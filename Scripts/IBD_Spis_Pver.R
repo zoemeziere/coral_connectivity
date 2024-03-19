@@ -5,7 +5,7 @@
 ##Create input file for Genepop
 
 #Create file with individual geogrpahic coordinates
-StyloTaxon1_lonlat <- read.csv("StyloTaxon1_lonlat.csv")
+StyloTaxon1_lonlat <- read.csv("lonlat_StyloTaxon1_pop.csv")
 StyloTaxon1_cord.lonlat = SpatialPoints(StyloTaxon1_lonlat, proj4string = CRS("+proj=longlat"))
 StyloTaxon1_cord.UTM <- spTransform(StyloTaxon1_cord.lonlat, CRS("+init=epsg:32748"))
 write.csv(StyloTaxon1_cord.UTM, "StyloTaxon1_latlon_mercator.csv") #manually modify to concatenante lon and lat and add a pop, output file nammed lonlat_StyloTaxon1_pop.csv
