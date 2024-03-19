@@ -16,10 +16,10 @@ StyloTaxon1_pop_genlight_mercator <- StyloTaxon1_genlight
 StyloTaxon1_pop_genlight_mercator@ind.names <- StyloTaxon1_pop_mercator$lonlat
 StyloTaxon1_pop_genlight_mercator@pop <- as.factor(StyloTaxon1_pop_mercator$pop)
 StyloTaxon1_pop_genepop_mercator <- gl2genepop(StyloTaxon1_pop_genlight_mercator)
-write.table(StyloTaxon1_pop_genepop_mercator, file = "StyloTaxon1_pop_genepop_mercator.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
+write.table(StyloTaxon1_pop_genepop_mercator, file = "StyloTaxon1_pop_genepop.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
 
-#Then use following command in terminal and run Genepop with StyloTaxon1_pop_genepop_mercator2.txt
-#sed 's/pop.*_//' StyloTaxon1_pop_genepop_mercator.txt > StyloTaxon1_pop_genepop_mercator2.txt
+#Then use following command in terminal and run Genepop with StyloTaxon1_pop_genepop2.txt
+#sed 's/pop.*_//' StyloTaxon1_pop_genepop.txt > StyloTaxon1_pop_genepop2.txt
 
 ##Plot IBD regression using Genepop outputs in IBD_Spis.csv
 
@@ -46,10 +46,10 @@ PverTaxon1A_genlight_mercator <- PverTaxon1A_genlight
 PverTaxon1A_genlight_mercator@ind.names <- PverTaxon1A_mercator$lonlat
 PverTaxon1A_genlight_mercator@pop <- as.factor(PverTaxon1A_mercator$lonlat)
 PverTaxon1A_genepop_mercator <- gl2genepop(PverTaxon1A_genlight_mercator)
-write.table(PverTaxon1A_genepop_mercator, file = "PverTaxon1A_genepop_mercator.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
+write.table(PverTaxon1A_genepop_mercator, file = "PverTaxon1A_genepop.txt", quote=FALSE, row.names=FALSE, col.names=FALSE)
 
-#Then use following command in terminal and run Genepop with PverTaxon1A_genlight_mercator2.txt
-#sed 's/pop.*_//' PverTaxon1A_genepop_mercator.txt > PverTaxon1A_genepop_mercator2.txt
+#Then use following command in terminal and run Genepop with PverTaxon1A_genepop2.txt
+#sed 's/pop.*_//' PverTaxon1A_genepop.txt > PverTaxon1A_genepop2.txt
 
 ##Plot IBD regression using Genepop outputs in IBD_Pver.csv
 
