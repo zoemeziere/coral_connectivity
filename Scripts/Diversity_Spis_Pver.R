@@ -36,7 +36,7 @@ sum(pi_pixy_Spis_Moore$count_diffs[!is.na(pi_pixy_Spis_Moore$count_diffs)]) / su
 ### Pocillopora verrucosa
 
 #Load PIXY output file containing pi values
-pi_pixy_Pver<-read.table("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/Diversity/pixy_pi.txt",sep="\t",header=T)
+pi_pixy_Pver<-read.table("Pver_pixy_pi.txt",sep="\t",header=T)
 
 pi_pixy_Pver_Pelorus <- pi_pixy_Pver %>% filter(pop == "Pelorus")
 pi_pixy_Pver_Moore <- pi_pixy_Pver %>% filter(pop == "Moore")
