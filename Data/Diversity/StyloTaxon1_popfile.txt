@@ -1,0 +1,232 @@
+BLCH101A.bam	Davies
+BLCH105A.bam	Davies
+BLCH107A.bam	Davies
+BLCH108A.bam	Davies
+BLCH109A.bam	Davies
+BLCH10A.bam	Davies
+BLCH112A.bam	Davies
+BLCH114A.bam	Davies
+BLCH117A.bam	Davies
+BLCH118A.bam	Davies
+BLCH11A.bam	Davies
+BLCH120A.bam	Davies
+BLCH121A.bam	Davies
+BLCH122A.bam	Davies
+BLCH145A.bam	Chicken
+BLCH148A.bam	Chicken
+BLCH151A.bam	Chicken
+BLCH152A.bam	Chicken
+BLCH154A.bam	Chicken
+BLCH157A.bam	Chicken
+BLCH16A.bam	Chicken
+BLCH174A.bam	Little Broadhurst
+BLCH182A.bam	Little Broadhurst
+BLCH184B.bam	Little Broadhurst
+BLCH190A.bam	Little Broadhurst
+BLCH193B.bam	Little Broadhurst
+BLCH194B.bam	Little Broadhurst
+BLCH195B.bam	Little Broadhurst
+BLCH196B.bam	Little Broadhurst
+BLCH197B.bam	Little Broadhurst
+BLCH20A.bam	Davies
+BLCH22A.bam	Davies
+BLCH31A.bam	Davies
+BLCH32A.bam	Davies
+BLCH35A.bam	Davies
+BLCH38A.bam	Davies
+BLCH41A.bam	Davies
+BLCH42A.bam	Davies
+BLCH46A.bam	Davies
+BLCH49A.bam	Davies
+BLCH4A.bam	Davies
+BLCH55A.bam	Davies
+BLCH56A.bam	Davies
+BLCH63A.bam	Davies
+BLCH78A.bam	Davies
+BLCH85A.bam	Davies
+BLCH86A.bam	Davies
+BLCH87A.bam	Davies
+BLCH91A.bam	Davies
+BLCH93A.bam	Davies
+BLCH99A.bam	Davies
+BLCH9A.bam	Davies
+Spis_CBHE_1279.bam	Heron
+Spis_CBHE_1281.bam	Heron
+Spis_CBHE_1282.bam	Heron
+Spis_CBHE_1284.bam	Heron
+Spis_CBHE_1287.bam	Heron
+Spis_CBHE_1289.bam	Heron
+Spis_CBHE_1324.bam	Heron
+Spis_CBHE_1334.bam	Heron
+Spis_CBHE_1335.bam	Heron
+Spis_CBHE_1346.bam	Heron
+Spis_CBHE_1382.bam	Heron
+Spis_CBHE_1396.bam	Heron
+Spis_CBHE_1398.bam	Heron
+Spis_CBHE_1400.bam	Heron
+Spis_CBHE_1408.bam	Heron
+Spis_CBHE_1412.bam	Heron
+Spis_CBHE_1418.bam	Heron
+Spis_CBHE_1423.bam	Heron
+Spis_CBHE_213.bam	Heron
+Spis_CBHE_221.bam	Heron
+Spis_CBHE_256.bam	Heron
+Spis_CBHE_259.bam	Heron
+Spis_CBLM_1239.bam	Lady Musgrave
+Spis_CBLM_1259.bam	Lady Musgrave
+Spis_CBLM_1261.bam	Lady Musgrave
+Spis_CBLM_1262.bam	Lady Musgrave
+Spis_CBLM_1264.bam	Lady Musgrave
+Spis_CBLM_1271.bam	Lady Musgrave
+Spis_CBLM_1274.bam	Lady Musgrave
+Spis_CBLM_1275.bam	Lady Musgrave
+Spis_OCCH_628.bam	Chicken
+Spis_OCCH_629.bam	Chicken
+Spis_OCCH_634.bam	Chicken
+Spis_OCCH_655.bam	Chicken
+Spis_OCCH_659.bam	Chicken
+Spis_OCCH_668.bam	Chicken
+Spis_OCDA_570.bam	Davies
+Spis_OCDA_573.bam	Davies
+Spis_OCDA_576.bam	Davies
+Spis_OCDA_577.bam	Davies
+Spis_OCDA_579.bam	Davies
+Spis_OCDA_581.bam	Davies
+Spis_OCDA_582.bam	Davies
+Spis_OCDA_588.bam	Davies
+Spis_OCDA_589.bam	Davies
+Spis_OCDA_593.bam	Davies
+Spis_OCDA_594.bam	Davies
+Spis_OCDA_595.bam	Davies
+Spis_OCDA_600.bam	Davies
+Spis_OCDA_601.bam	Davies
+Spis_OCDA_602.bam	Davies
+Spis_OCDA_603.bam	Davies
+Spis_OCDA_613.bam	Davies
+Spis_OCDA_670.bam	Davies
+Spis_OCDA_672.bam	Davies
+Spis_OCDA_675.bam	Davies
+Spis_OCDA_677.bam	Davies
+Spis_OCDA_679.bam	Davies
+Spis_OCDA_683.bam	Davies
+Spis_OCDA_691.bam	Davies
+Spis_OCDA_740.bam	Davies
+Spis_OCDA_742.bam	Davies
+Spis_OCDA_743.bam	Davies
+Spis_OCDA_746.bam	Davies
+Spis_OCDA_748.bam	Davies
+Spis_OCDA_749.bam	Davies
+Spis_OCDA_752.bam	Davies
+Spis_OCDA_755.bam	Davies
+Spis_OCDA_757.bam	Davies
+Spis_OCDA_758.bam	Davies
+Spis_OCDA_760.bam	Davies
+Spis_OCDA_762.bam	Davies
+Spis_OCDA_763.bam	Davies
+Spis_OCDA_768.bam	Davies
+Spis_OCDA_770.bam	Davies
+Spis_OCDA_776.bam	Davies
+Spis_OCDA_778.bam	Davies
+Spis_OCDA_779.bam	Davies
+Spis_OCDA_781.bam	Davies
+Spis_OCDA_784.bam	Davies
+Spis_OCDA_788.bam	Davies
+Spis_OCLB_697.bam	Little Broadhurst
+Spis_OCLB_701.bam	Little Broadhurst
+Spis_OCLB_711.bam	Little Broadhurst
+Spis_OCLB_717.bam	Little Broadhurst
+Spis_OCLB_720.bam	Little Broadhurst
+Spis_OCLB_724.bam	Little Broadhurst
+Spis_OCLB_725.bam	Little Broadhurst
+Spis_OCLB_728.bam	Little Broadhurst
+Spis_OCLB_731.bam	Little Broadhurst
+Spis_OCLB_734.bam	Little Broadhurst
+Spis_OCLB_738.bam	Little Broadhurst
+Spis_OCLB_739.bam	Little Broadhurst
+Spis_ONLI_441.bam	Lizard
+Spis_ONLI_442.bam	Lizard
+Spis_ONLI_443.bam	Lizard
+Spis_ONLI_445.bam	Lizard
+Spis_ONLI_448.bam	Lizard
+Spis_ONLI_449.bam	Lizard
+Spis_ONLI_455.bam	Lizard
+Spis_ONLI_456.bam	Lizard
+Spis_ONLI_465.bam	Lizard
+Spis_ONLI_467.bam	Lizard
+Spis_ONLI_468.bam	Lizard
+Spis_ONLI_484.bam	Lizard
+Spis_ONLI_486.bam	Lizard
+Spis_ONLI_488.bam	Lizard
+Spis_ONLI_489.bam	Lizard
+Spis_ONLI_490.bam	Lizard
+Spis_ONLI_491.bam	Lizard
+Spis_ONLI_493.bam	Lizard
+Spis_ONLI_494.bam	Lizard
+Spis_ONLI_792.bam	Lizard
+Spis_ONLI_793.bam	Lizard
+Spis_ONLI_798.bam	Lizard
+Spis_ONLI_804.bam	Lizard
+Spis_ONLI_805.bam	Lizard
+Spis_ONLI_807.bam	Lizard
+Spis_ONLI_810.bam	Lizard
+Spis_ONLI_814.bam	Lizard
+Spis_ONLI_815.bam	Lizard
+Spis_ONLI_817.bam	Lizard
+Spis_ONLI_820.bam	Lizard
+Spis_ONLI_822.bam	Lizard
+Spis_ONLI_823.bam	Lizard
+Spis_ONMO_327.bam	Moore
+Spis_ONMO_328.bam	Moore
+Spis_ONMO_333.bam	Moore
+Spis_ONMO_334.bam	Moore
+Spis_ONMO_342.bam	Moore
+Spis_ONMO_347.bam	Moore
+Spis_ONMO_348.bam	Moore
+Spis_ONMO_349.bam	Moore
+Spis_ONMO_350.bam	Moore
+Spis_ONMO_351.bam	Moore
+Spis_ONMO_360.bam	Moore
+Spis_ONMO_362.bam	Moore
+Spis_ONMO_363.bam	Moore
+Spis_ONMO_364.bam	Moore
+Spis_ONMO_381.bam	Moore
+Spis_ONMO_382.bam	Moore
+Spis_ONMO_383.bam	Moore
+Spis_ONMO_385.bam	Moore
+Spis_ONMO_386.bam	Moore
+Spis_ONMO_393.bam	Moore
+Spis_ONMO_394.bam	Moore
+Spis_ONMO_395.bam	Moore
+Spis_ONMO_396.bam	Moore
+Spis_ONMO_403.bam	Moore
+Spis_ONMO_404.bam	Moore
+Spis_ONMO_408.bam	Moore
+Spis_ONMO_410.bam	Moore
+Spis_ONMO_412.bam	Moore
+Spis_ONMO_414.bam	Moore
+Spis_ONMO_415.bam	Moore
+Spis_ONMO_416.bam	Moore
+Spis_ONMO_419.bam	Moore
+Spis_ONMO_421.bam	Moore
+Spis_ONMO_427.bam	Moore
+Spis_PAOR_545.bam	Pelorus
+Spis_PAOR_548.bam	Pelorus
+Spis_PAOR_550.bam	Pelorus
+Spis_PAOR_551.bam	Pelorus
+Spis_PAPE_528.bam	Pelorus
+Spis_PAPE_529.bam	Pelorus
+Spis_PAPE_530.bam	Pelorus
+Spis_PAPE_531.bam	Pelorus
+Spis_PAPE_532.bam	Pelorus
+Spis_PAPE_533.bam	Pelorus
+Spis_PAPE_535.bam	Pelorus
+Spis_PAPE_538.bam	Pelorus
+Spis_PAPE_539.bam	Pelorus
+Spis_PAPE_540.bam	Pelorus
+Spis_PAPE_541.bam	Pelorus
+Spis_PAPE_542.bam	Pelorus
+Spis_PAPE_543.bam	Pelorus
+Spis_PAPE_558.bam	Pelorus
+Spis_PAPE_562.bam	Pelorus
+Spis_PAPE_564.bam	Pelorus
+Spis_PAPE_566.bam	Pelorus
