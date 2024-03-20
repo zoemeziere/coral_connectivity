@@ -10,7 +10,7 @@
 
 module load bcftools
 
-bcftools mpileup -f /QRISdata/Q5253/RAD_data/Stylophora/raw_data/reference_genome_gbr/Stylophora_pistillata_LR3SR3PC3.fa_decontaminated.fasta -b bam_files.txt | bcftools call -m -Oz -f GQ -o SpisTaxon1_allsites
+bcftools mpileup -f /Stylophora_pistillata_LR3SR3PC3.fa_decontaminated.fasta -b bam_files.txt | bcftools call -m -Oz -f GQ -o SpisTaxon1_allsites
 
 module load vcftools
 
