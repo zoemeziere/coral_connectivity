@@ -4,11 +4,11 @@ Data (input and output) and scripts used to perform analyses presented in "Dispe
 
 # Data
 
-## VCF 
+### VCF ###
 
 The filtered VCF files used for all but the diversity analyses.
 
-## VCF 
+### Metadata ###
 
 Metadata files with information on all samples analysed in this study.
 
