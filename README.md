@@ -10,21 +10,19 @@ Metadata files are accessible on the GEOME database under the following GUIDs:  
 
 ## Data folder ##
 
-### Metadata folder ###
+### ADMIXTURE folder ###
 
-Metadata files with information on all samples analysed in this study for both species, as well as sites and reefs coordinates used for making maps.
-
-### Kinship folder ###
-
-Output files of COLONY run to find close kins in Stylophora pistillata.
+Output files from ADMIXTURE analyses for both species.
 
 ### Diversity folder ###
 
 Output files from PIXY and Stacks Populations with diversity estimates per population for both species.
 
-### ADMIXTURE folder ###
+### Filtering folder ###
 
-Output files from ADMIXTURE analyses for both species.
+  * Individuals names to rerun ipyrad step7: `SpisTaxon1_individuals.txt`, `Pver_individuals.txt`
+  * Ipyrad parameter files before removing cryptic taxa: `params-Stylo_all.txt`, `params-poci_all_remove1.txt`
+  * Ipyrad parameter files after removing cryptic taxa: `params-StyloTaxon1.txt`, `params-PverTaxon1A.txt`
 
 ### IBD folder ###
 
@@ -40,9 +38,22 @@ Output files:
  * Genepop: `Pver_genepop_1d_all_out.txt.GRA`, `Pver_genepop_1d_all_out.txt`, `Spis_genepop_2d_0-10000m_out.txt.GRA`, `Spis_genepop_2d_0-10000m_out.txt`,`IBD_Pver.csv`, `IBD_Spis.csv`,
  * NeEstimator: `Pver_NeEstimator_north_out.txt`, `Pver_NeEstimator_south_out.txt`, `Spis_NeEstimator_out.txt`, `Spis_Ne_pop.csv`, `Ne_north_south.csv`
 
+### Kinship folder ###
+
+Output files of COLONY run to find close kins in Stylophora pistillata.
+
+### Kinship folder ###
+
+Output files of COLONY run to find close kins in Stylophora pistillata.
+
 ### LTMP folder ###
 
 Data from AIMS Long Term Monitoring Program with target species count and abundance at sampling sites.
+
+### Metadata folder ###
+
+Metadata files with information on all samples analysed in this study for both species, as well as sites and reefs coordinates used for making maps.
+
 
 ## Scripts folder ##
 
