@@ -1,6 +1,5 @@
 ###Script to perform population structure analyses on P. verrucosa dataset
 
-###Required libraries
 library(adegenet)
 library(dartR)
 library(tidyr)
@@ -8,8 +7,8 @@ library(ggplot2)
 library(vegan)
 
 ###Genomic data and metadata
-PverTaxon1A_genlight <- gl.read.vcf("PverTaxon1A_SF080_LD_nohyb.recode.vcf")
-PverTaxon1A_metadata <- read.csv("PverTaxon1A_metadata.csv") %>% arrange(Sample_name)
+PverTaxon1A_genlight <- gl.read.vcf("Pver_filtered.vcf")
+PverTaxon1A_metadata <- read.csv("Pver_metadata.csv") %>% arrange(Sample_name)
 PverTaxon1A_metadata$locality <- factor(PverTaxon1A_metadata$locality, levels = c("Flinders", "Lady Musgrave", "Heron", "Little Broadhurst", "Chicken", "Davies", "Pelorus", "Moore", "Lizard", "Masig", "Aukane", "Dungeness"))
 PverTaxon1A_coordinates <- cbind("lon" = PverTaxon1A_metadata$decimalLongitude, "lat" = PverTaxon1A_metadata$decimalLatitude)
 
@@ -31,7 +30,7 @@ ggplot(PCA_PverTaxon1A.df, aes(PC7, PC8, col= PverTaxon1A_metadata$locality)) +
        y = paste0("PC8 (", signif(pve_PverTaxon1A$X100...PCA_PverTaxon1A.eig.1.10..sum.PCA_PverTaxon1A.eig.1.10..[8], 3), "%)"))
 
 ###ADMIXTURE
-PocilloTaxon1A_K2_admix <- read.table("PverTaxon1A_SF080_LD_nohyb.2.Q") %>%
+PocilloTaxon1A_K2_admix <- read.table("Pver_filtered.2.Q") %>%
   cbind(PverTaxon1A_metadata, PocilloTaxon1A_K2_admix) %>%
   gather(PocilloTaxon1A_K2_admix, key="V", value="probK2", 33:34)
 
