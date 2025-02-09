@@ -1,5 +1,5 @@
 #!/bin/bash --login
-#SBATCH --job-name="pixy"    # job name
+#SBATCH --job-name="allSites_Spis"    # job name
 #SBATCH --nodes=1				# use 1 node
 #SBATCH --ntasks-per-node=1     # use 1 for single and multi core jobs
 #SBATCH --cpus-per-task=1		# number of cores per job
