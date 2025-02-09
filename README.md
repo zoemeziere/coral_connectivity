@@ -1,8 +1,12 @@
-# coral_connectivity #
+# Data availability for "Connectivity differs by orders of magnitude among co-distributed corals, affecting spatial scales of eco-evolutionary processes #
 
-Data (input and output) and scripts used to perform analyses presented in "Dispersal differs by orders of magnitude among co-distributed coral species, affecting spatial scales of eco-evolutionary processes"
+This repository contains all scripts and input data files required to run all analyses performed in Meziere et al., (2025).
 
-# Data
+Raw sequence data is accessible on the NCBI SRA database under the following BioProjects: PRJNA1215558, PRJNA1140372, PRJNA996644.
+
+Metadata files are accessible on the GEOME database under the following GUIDs:  https://n2t.net/ark:/21547/Fxv2, https://n2t.net/ark:/21547/FnE2, https://n2t.net/ark:/21547/FnE2.
+
+## Input data files ##
 
 ### VCF ###
 
@@ -26,7 +30,7 @@ Input files for isolation by distance analyes: census counts (census_numbers_Pve
 
 Output files for isolation by distance analyes: genepop outputs (PverTaxon1A_genepop_1d_All_out.txt.GRA, StyloTaxon1_genepop_2d_0-10000m_out.txt.GRA, IBD_Pver.csv, IBD_Spis.csv), NeEstimator output files (StyloTaxon1_Ne_genepopLD.txt, PverTaxon1A_Ne_genepopLD_south.txt, PverTaxon1A_Ne_genepopLD_north.txt)
 
-# Scripts
+## Scripts ##
 
 Admixture.sh: run ADMIXTURE analyses
 
