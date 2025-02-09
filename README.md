@@ -52,6 +52,10 @@ Above, I describe the use for all scripts present in this folder.
 
 * `Diversity_Spis_Pver.R` ananlyses diversity estimates output from PIXY and Stacks, and calculates allelic richness.
 
+* `Filtering_Pver.sh` and `Filtering_Spis.sh` transform raw VCF to filtered VCF using VCFTools and PLINK.
+
+* `Filtering_allSites_Pver.sh` and `Filtering_allSites_Spis.sh` create all sites VCF (invariant and variant sites).
+
 * `IBD_Spis_Pver.R` creates GenePop input files to perform IBD analyses and plots regressions.
 
 * `Kinship_Spis_Pver.R` creates input files for COLONY to run kinship analyses, and calculate distances between Spis kins idenfitified.
