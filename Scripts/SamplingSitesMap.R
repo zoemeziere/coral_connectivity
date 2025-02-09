@@ -3,7 +3,7 @@
 sites_Pver_Spis <- read.csv("sites_Pver_Spis.csv", header = TRUE)
 
 setEPS()
-postscript("/Users/zoemeziere/Documents/PhD/Chapter2_writting/Figures/GBRmap.ps")
+postscript("GBRmap.ps")
 ggplot(data = gbr_feat) +
   theme_bw() +
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), 
