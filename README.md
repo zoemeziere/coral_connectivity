@@ -39,6 +39,10 @@ Output files:
  * Genepop: `Pver_genepop_1d_out.txt.GRA`, `Spis_genepop_2d_out.txt.GRA`, `IBD_Pver.csv`, `IBD_Spis.csv`,
  * NeEstimator: `Spis_NeEstimator_out.txt`, `Spis_Ne_pop.csv`, `PverTaxon1A_Ne_genepopLD_south.txt`, `PverTaxon1A_Ne_genepopLD_north.txt`, `Ne_north_south.csv`
 
+### LTMP folder ###
+
+Data from AIMS Long Term Monitoring Program with target species count and abundance at sampling sites.
+
 ## Scripts folder ##
 
 Above, I describe the use for all scripts present in this folder.
