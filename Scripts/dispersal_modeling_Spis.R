@@ -2,7 +2,6 @@
 # Riginos, April 2024
 
 library(rethinking)
-setwd("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/SpisTaxon1/IBD/CalculatingSigmaWithError")
 
 # Roadmap
 # 1 - De: Get priors from census counts and LDNe estimates
@@ -68,8 +67,8 @@ approx_lnorm_pars<-function(par = c(0,1), obs_quantiles, p_thresholds=c(0.025,0.
 # From census_densities_counts_abundance.R, we have obtained posterior distributions for 
 # a) poisson lambda describing all stylophora (per 288m2): stylo_counts_post
 # b) binomial p describing proportion of Tax1: stylo_proportions_post
-stylo_proportions_post<-readRDS("./stylo_proportions_post.RDS")
-stylo_counts_post<-readRDS("./stylo_counts_post.RDS")
+stylo_proportions_post<-readRDS("stylo_proportions_post.RDS")
+stylo_counts_post<-readRDS("stylo_counts_post.RDS")
 
 NC_Spis<-stylo_counts_post$lambda*stylo_proportions_post$p
 hist(NC_Spis)
@@ -77,7 +76,7 @@ hist(NC_Spis)
 DNC_Spis<-stylo_counts_post$lambda*stylo_proportions_post$p/288 
 
 # LDNE density - assume gamma distribution b/c upper tail can be large
-Ne_estimates <- read.csv("./Spis_Ne_pop.csv") # estimates of Ne distributions for 8 pops
+Ne_estimates <- read.csv("Spis_Ne_pop.csv") # estimates of Ne distributions for 8 pops
 
 # Want to create a posterior distribution of Ne representing all populations
 # We will simulate posteriors based on the returned values
@@ -123,5 +122,5 @@ hist(sigma_DN_Spis)
 Neighborhood_NC_Spis<-4*pi*DNC_Spis*sigma_DC_Spis^2 
 Neighborhood_NE_Spis<-4*pi*DNE_Spis*sigma_DN_Spis^2
 
-sigma_DC_Spis.df <- as.data.frame(sigma_DC_Spis)
-sigma_DN_Spis.df  <- as.data.frame(sigma_DN_Spis)
+DispersalDistance_DC_Spis <- sigma_DC_Spis/sqrt(2) # Laplace kernel 
+DispersalDistance_DN_Spis <- sigma_DN_Spis/sqrt(2) # Laplace kernel 
