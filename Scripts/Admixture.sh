@@ -12,7 +12,7 @@
 source /QRISdata/Q5253/miniconda3/etc/profile.d/conda.sh
 conda activate admixture
 
-FILE=Spis_filtered
+FILE=Spis_filtered # Change core name to perform analysis for Pver
 
 awk '{$1="0";print $0}' $FILE.bim > $FILE.bim.tmp
 mv $FILE.bim.tmp $FILE.bim
