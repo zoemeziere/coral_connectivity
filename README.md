@@ -53,6 +53,8 @@ Above, I describe the use for all scripts present in this folder.
 
 * `NeEstimator_Spis_Pver.R` create input files for NeEstimator
 
+* `Pver_missing_data.R` performes PCA analyses, pairwise FST calculationa and creates input files for Genepop and NeEstimator for datasets with less missing data in Pver 
+
 * `PopulationStructure_Pver.` and `PopulationStructure_Spis.R` perform PCA to identify population structure and calculate population pairwise Fst.
 
 * `SamplingSitesMap.R` creates maps for sampled reefs and sites within reefs.
@@ -61,6 +63,6 @@ Above, I describe the use for all scripts present in this folder.
 
 * `dispersal_modeling_Pver.R` and `dispersal_modeling_Spis.R` build models to estimate sigma and genetic neighborhood.
 
-* `genepop_Pver.R` and `genepop_Spis.R` run GenePop in R to get IBD slope
+* `genepop_Pver.R` and `genepop_Spis.R` run GenePop in R to get IBD slope. This scripts were run on the HPC using `run_genepop_Pver.sh` and `run_genepop_Spis.sh`
 
 * `vcf_pixy.sh` creates all sites vcf files and runs pixy.
