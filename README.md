@@ -4,6 +4,8 @@ This repository contains all scripts and input data files required to run all an
 
 Raw sequence data is accessible on the NCBI SRA database under the following BioProjects: PRJNA1215558, PRJNA1140372, PRJNA996644.
 
+VCF files are acessible on the University of Queensland eSpace: <add link>
+
 Metadata files are accessible on the GEOME database under the following GUIDs:  https://n2t.net/ark:/21547/Fxv2, https://n2t.net/ark:/21547/FnE2, https://n2t.net/ark:/21547/FnE2.
 
 ## Data folder ##
