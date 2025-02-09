@@ -1,5 +1,7 @@
 #Scripts to analyse diversity measurements obtained in PIXY and STACKS for both S. pistillata and P. verrucosa
 
+library(dplyr)
+
 ### Stylophora pistillata
 
 #Load PIXY output file containing pi values
