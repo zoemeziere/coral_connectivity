@@ -12,7 +12,7 @@
 source /QRISdata/Q5253/miniconda3/etc/profile.d/conda.sh
 conda activate admixture
 
-FILE=StyloTaxon1_SF095_LD
+FILE=Spis_filtered
 
 awk '{$1="0";print $0}' $FILE.bim > $FILE.bim.tmp
 mv $FILE.bim.tmp $FILE.bim
