@@ -40,24 +40,24 @@ Output files for isolation by distance analyes: genepop outputs (PverTaxon1A_gen
 
 Above, I describe the use for all scripts present in this folder.
 
-`Admixture.sh` runs ADMIXTURE analyses to detect population structure.
+* `Admixture.sh` runs ADMIXTURE analyses to detect population structure.
 
-`Diversity_Spis_Pver.R` ananlyses diversity estimates output from PIXY and Stacks, and calculates allelic richness.
+* `Diversity_Spis_Pver.R` ananlyses diversity estimates output from PIXY and Stacks, and calculates allelic richness.
 
-`IBD_Spis_Pver.R` creates GenePop input files to perform IBD analyses and plots regressions.
+* `IBD_Spis_Pver.R` creates GenePop input files to perform IBD analyses and plots regressions.
 
-`Kinship_Spis_Pver.R` creates input files for COLONY to run kinship analyses, and calculate distances between Spis kins idenfitified.
+* `Kinship_Spis_Pver.R` creates input files for COLONY to run kinship analyses, and calculate distances between Spis kins idenfitified.
 
-`NeEstimator_Spis_Pver.R` create input files for NeEstimator
+* `NeEstimator_Spis_Pver.R` create input files for NeEstimator
 
-`PopulationStructure_Pver.` and `PopulationStructure_Spis.R` perform PCA to identify population structure and calculate population pairwise Fst.
+* `PopulationStructure_Pver.` and `PopulationStructure_Spis.R` perform PCA to identify population structure and calculate population pairwise Fst.
 
-`SamplingSitesMap.R` creates maps for sampled reefs and sites within reefs.
+* `SamplingSitesMap.R` creates maps for sampled reefs and sites within reefs.
 
-`census_densisties_counts_Pver.R` and `census_densisties_counts_Spis.R` build models to estimate to census densities.
+* `census_densisties_counts_Pver.R` and `census_densisties_counts_Spis.R` build models to estimate to census densities.
 
-`dispersal_modeling_Pver.R` and `dispersal_modeling_Spis.R` build models to estimate sigma and genetic neighborhood.
+* `dispersal_modeling_Pver.R` and `dispersal_modeling_Spis.R` build models to estimate sigma and genetic neighborhood.
 
-`genepop_Pver.R` and `genepop_Spis.R` run GenePop in R to get IBD slope
+* `genepop_Pver.R` and `genepop_Spis.R` run GenePop in R to get IBD slope
 
-`vcf_pixy.sh` creates all sites vcf files and runs pixy.
+* `vcf_pixy.sh` creates all sites vcf files and runs pixy.
