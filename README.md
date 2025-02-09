@@ -34,7 +34,7 @@ Output files for isolation by distance analyes: genepop outputs (PverTaxon1A_gen
 
 ## Scripts folder ##
 
-Admixture.sh: run ADMIXTURE analyses
+'Admixture.sh' runs ADMIXTURE analyses
 
 Diversity_Spis_Pver.R: ananlyses of diversity estimates
 
