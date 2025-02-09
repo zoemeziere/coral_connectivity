@@ -32,12 +32,13 @@ Input files:
   * Census counts: `census_numbers_Pver.csv`, `census_numbers_Spis.csv`, `Pver_census_numbers_grp.csv`, 
   * Spatial coordinates: `Spis_lonlat_pop.csv`, `Pver_lonlat.csv`,
   * S. pistillata cryptic taxa abundance: `Taxa_Spis_counts.csv`,
-  * Genepop: `StyloTaxon1_genepop2.txt`, `PverTaxon1A_genepop2.txt`
+  * Genepop: `Spis_pop_genepop_mercator.txt`, `Pver_genepop_mercator.txt`
+  * NeEstimator: `Pver_NeEstimator_north.txt`, `Pver_NeEstimator_south.txt`, `Spis_NeEstimator_in.txt`
 
 Output files: 
  * Census counts: `Pver_counts_post.RDS`, `stylo_counts_post.RDS`, `stylo_proportions_post.RDS`
- * Genepop: `Pver_genepop_1d_out.txt.GRA`, `Spis_genepop_2d_out.txt.GRA`, `IBD_Pver.csv`, `IBD_Spis.csv`,
- * NeEstimator: `Spis_NeEstimator_out.txt`, `Spis_Ne_pop.csv`, `PverTaxon1A_Ne_genepopLD_south.txt`, `PverTaxon1A_Ne_genepopLD_north.txt`, `Ne_north_south.csv`
+ * Genepop: `Pver_genepop_1d_all_out.txt.GRA`, `Pver_genepop_1d_all_out.txt`, `Spis_genepop_2d_0-10000m_out.txt.GRA`, `Spis_genepop_2d_0-10000m_out.txt`,`IBD_Pver.csv`, `IBD_Spis.csv`,
+ * NeEstimator: `Pver_NeEstimator_north_out.txt`, `Pver_NeEstimator_south_out.txt`, `Spis_NeEstimator_out.txt`, `Spis_Ne_pop.csv`, `Ne_north_south.csv`
 
 ### LTMP folder ###
 
