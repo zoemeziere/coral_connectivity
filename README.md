@@ -28,13 +28,16 @@ Output files from ADMIXTURE analyses for both species.
 
 ### IBD folder ###
 
-Input files for isolation by distance analyes: 
-  * census counts: `census_numbers_Pver.csv`, `census_numbers_Spis.csv`,
-  * spatial coordinates: `lonlat_StyloTaxon1_pop.csv`, `Pver_lonlat.csv`,
-  * S. pistillata cryptic taxa abundance: `SpisTaxon1_abundance.csv`,
-  * genepop input files: `StyloTaxon1_genepop2.txt`, `PverTaxon1A_genepop2.txt`
+Input files: 
+  * Census counts: `census_numbers_Pver.csv`, `census_numbers_Spis.csv`, `Pver_census_numbers_grp.csv`, 
+  * Spatial coordinates: `Spis_lonlat_pop.csv`, `Pver_lonlat.csv`,
+  * S. pistillata cryptic taxa abundance: `Taxa_Spis_counts.csv`,
+  * Genepop: `StyloTaxon1_genepop2.txt`, `PverTaxon1A_genepop2.txt`
 
-Output files for isolation by distance analyes: genepop outputs (PverTaxon1A_genepop_1d_All_out.txt.GRA, StyloTaxon1_genepop_2d_0-10000m_out.txt.GRA, IBD_Pver.csv, IBD_Spis.csv), NeEstimator output files (StyloTaxon1_Ne_genepopLD.txt, PverTaxon1A_Ne_genepopLD_south.txt, PverTaxon1A_Ne_genepopLD_north.txt)
+Output files: 
+ * Census counts: `Pver_counts_post.RDS`, `stylo_counts_post.RDS`, `stylo_proportions_post.RDS`
+ * Genepop: `Pver_genepop_1d_out.txt.GRA`, `Spis_genepop_2d_out.txt.GRA`, `IBD_Pver.csv`, `IBD_Spis.csv`,
+ * NeEstimator: `Spis_NeEstimator_out.txt`, `Spis_Ne_pop.csv`, `PverTaxon1A_Ne_genepopLD_south.txt`, `PverTaxon1A_Ne_genepopLD_north.txt`, `Ne_north_south.csv`
 
 ## Scripts folder ##
 
