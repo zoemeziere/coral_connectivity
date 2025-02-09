@@ -1,10 +1,7 @@
 # Riginos, April 2024
-# Set working directory to this script
-# Using Stylophora pistillata data from Zoe
 
 library(tidyverse)
 library(rethinking)
-setwd("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/SpisTaxon1/IBD/CalculatingSigmaWithError")
 
 # Roadmap -----------------------------------------------------------------
 # Goal: To describe distributions related to the density of Taxon1 Stylophora from census data
@@ -15,8 +12,8 @@ setwd("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/SpisTaxon1/IBD/Calculat
 # Read in files and prepare them ------------------------------------------
 
 # Read in data
-Spis_census_numbers <- read.csv("./census_numbers_Spis.csv") #read census numbers
-Spis_proportions <- read.csv("./Taxa_Spis_counts.csv") #different taxa proportions  
+Spis_census_numbers <- read.csv("census_numbers_Spis.csv") #read census numbers
+Spis_proportions <- read.csv("Taxa_Spis_counts.csv") #different taxa proportions  
 
 # Consolidate to one data frame
 Spis_census_numbers_grp <- 
@@ -56,9 +53,9 @@ exp(precis(intercept_m )$sd) # = 1.02
 
 #Posterior to be used as prior in sigma calculation
 stylo_counts_post<-extract.samples(intercept_m) #n= flag not working
-saveRDS(stylo_counts_post, "./Zoe_files/PosteriorPredictedDistributions/stylo_counts_post.RDS")
+saveRDS(stylo_counts_post, "stylo_counts_post.RDS")
 
-stylo_counts_post <- readRDS("./stylo_counts_post.RDS")
+stylo_counts_post <- readRDS("stylo_counts_post.RDS")
 
 
 # 2 - Estimate Tax1 proportions using genotyping results  ----------
@@ -86,9 +83,9 @@ inv_logit(0.11) #0.52: sd in probability of being Tax1
 
 #Posterior to be used as prior in sigma calculation
 stylo_proportions_post<-extract.samples(intercept_tax1 , n=numb_sims)
-saveRDS(stylo_proportions_post, "./Zoe_files/PosteriorPredictedDistributions/stylo_proportions_post.RDS")
+saveRDS(stylo_proportions_post, "stylo_proportions_post.RDS")
 
-stylo_proportions_post <- readRDS("./stylo_proportions_post.RDS")
+stylo_proportions_post <- readRDS("stylo_proportions_post.RDS")
 
 rm(counts, intercept_m, intercept_tax1, proportions, 
    Spis_census_numbers_grp, Spis_proportions)
