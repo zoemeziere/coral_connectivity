@@ -14,31 +14,31 @@ bcftools mpileup -f /Stylophora_pistillata_LR3SR3PC3.fa_decontaminated.fasta -b 
 
 module load vcftools
 
-vcftools --gzvcf SpisTaxon1_allsites.vcf.gz --remove-indels --max-missing 0.95 --recode --out SpisTaxon1_allsites_SF
+vcftools --gzvcf Spis_allsites.vcf.gz --remove-indels --max-missing 0.95 --recode --out Spis_allsites_SF
 
-vcftools --gzvcf SpisTaxon1_allsites_SF.recode.vcf --max-maf 0 --recode --out SpisTaxon1_allsites_SF_invar
+vcftools --gzvcf Spis_allsites_SF.recode.vcf --max-maf 0 --recode --out Spis_allsites_SF_invar
 
-vcftools --gzvcf SpisTaxon1_allsites_SF.recode.vcf.gz --mac 3 --maf 0.005 --min-alleles 2 --max-alleles 2 --max-meanDP 100 --recode --out SpisTaxon1_allsites_SF_var
+vcftools --gzvcf Spis_allsites_SF.recode.vcf.gz --mac 3 --maf 0.005 --min-alleles 2 --max-alleles 2 --max-meanDP 100 --recode --out Spis_allsites_SF_var
 
-bgzip SpisTaxon1_allsites_SF_var.recode.vcf
+bgzip Spis_allsites_SF_var.recode.vcf
 
-tabix SpisTaxon1_allsites_SF_var.recode.vcf.gz
+tabix Spis_allsites_SF_var.recode.vcf.gz
 
-bgzip SpisTaxon1_allsites_SF_invar.recode.vcf 
+bgzip Spis_allsites_SF_invar.recode.vcf 
 
-tabix SpisTaxon1_allsites_SF_invar.recode.vcf.gz
+tabix Spis_allsites_SF_invar.recode.vcf.gz
 
 module load bcftools
 
-bcftools concat --allow-overlaps SpisTaxon1_allsites_SF_var.recode.vcf.gz SpisTaxon1_allsites_SF_invar.recode.vcf.gz -O z -o SpisTaxon1_allsites_SF_combined.vcf.gz
+bcftools concat --allow-overlaps Spis_allsites_SF_var.recode.vcf.gz Spis_allsites_SF_invar.recode.vcf.gz -O z -o Spis_allsites_SF_combined.vcf.gz
 
-awk '{gsub(/[lcl|contig]/,"lcl_contig"); print}' SpisTaxon1_allsites_SF_combined.vcf.gz > SpisTaxon1_allsites_SF_combined2.vcf.gz
+awk '{gsub(/[lcl|contig]/,"lcl_contig"); print}' Spis_allsites_SF_combined.vcf.gz > Spis_allsites_SF_combined2.vcf.gz
 
-tabix SpisTaxon1_allsites_SF_combined2.vcf.gz
+tabix Spis_allsites_SF_combined2.vcf.gz
 
 module load anaconda3/2022.05
 source $EBROOTANACONDA3/etc/profile.d/conda.sh
 
 conda activate pixy
 
-pixy --stats pi fst dxy --vcf SpisTaxon1_allsites_SF_combined2.vcf.gz --populations SpisTaxon1_popfile.txt --window_size 10000 --n_cores 4
+pixy --stats pi fst dxy --vcf Spis_allsites_SF_combined2.vcf.gz --populations Spis_popfile.txt --window_size 10000 --n_cores 4
