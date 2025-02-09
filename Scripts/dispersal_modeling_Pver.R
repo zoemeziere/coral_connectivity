@@ -1,7 +1,6 @@
 # Estimating sigma and Nb for Pocillopora verrucosa
 
 library(rethinking)
-setwd("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/IBD/CalculatingSigmaWithError")
 
 # Roadmap
 # 1 - De: Get priors from census counts and LDNe estimates
@@ -63,13 +62,13 @@ approx_lnorm_pars<-function(par = c(mean(log(obs_quantiles)), sd(log(obs_quantil
 # to obtain linear densities per site
 # Then we multiply by the coral-covered length of the GBR (=290000), then devide by the total length of the GRR (=2000000m)
 
-Pver_counts_post<-readRDS("./Pver_counts_post.RDS")
+Pver_counts_post<-readRDS("Pver_counts_post.RDS")
 
 NC_Pver<-Pver_counts_post$lambda*Pver_counts_post$a
 hist(NC_Pver)
 
 DNC_Pver_site<-Pver_counts_post$lambda/576 
-DNC_Pver<-DNC_Pver_site*290000/2000000 # mean = 0.006044428
+DNC_Pver<-DNC_Pver_site*290000/2000000 
 
 # LDNE density - assume gamma distribution b/c upper tail can be large
 # We will simulate posteriors based on the returned values
@@ -82,16 +81,11 @@ DNE_Pver<-list()
 NE_quantiles_Pver <- c(28813.85542, 39796.62651, 64272.6506)
 NE_mean_shape <- approx_gamma_pars(obs_quantiles=NE_quantiles_Pver)[1]
 NE_mean_scale <- approx_gamma_pars(obs_quantiles=NE_quantiles_Pver)[2]
-NE_Pver <-rgamma(1000, shape=NE_mean_shape, scale=NE_mean_shape) # mean = 831.6888
+NE_Pver <-rgamma(1000, shape=NE_mean_shape, scale=NE_mean_shape)
 hist(NE_Pver) 
 
-DNE_Pver <- NE_Pver/2000000 # mean = 0.0004158444
+DNE_Pver <- NE_Pver/2000000 
 hist(DNE_Pver)
-
-#DNE_quantiles_Pver <- c(28813.85542, 39796.62651, 64272.6506)/2000000
-#DNE_shape_Pver<-approx_gamma_pars(obs_quantiles=c(DNE_quantiles_Pver))[[1]]
-#DNE_scale_Pver<-approx_gamma_pars(obs_quantiles=c(DNE_quantiles_Pver))[[2]]
-#DNE_Pver <-rgamma(1000, shape=DNE_shape_Pver, scale=DNE_scale_Pver) # mean=0.026
 
 # Slope - estimating gamma function for prior -----------------------------
 # Using slope output from GenePop
@@ -115,5 +109,5 @@ hist(sigma_DN_Pver)
 Neighborhood_NC_Pver<-4*DNC_Pver*sigma_DC_Pver^2 
 Neighborhood_NE_Pver<-4*DNE_Pver*sigma_DN_Pver^2 
 
-sigma_DC_Pver.df <- as.data.frame(sigma_DC_Pver)
-sigma_DN_Pver.df <- as.data.frame(sigma_DN_Pver)
+DispersalDistance_DC_Pver <- sigma_DC_Pver/sqrt(2) # Laplace kernel 
+DispersalDistance_DN_Pver <- sigma_DN_Pver/sqrt(2) # Laplace kernel 
