@@ -1,11 +1,13 @@
-#Scripts to analyse diversity measurements obtained in PIXY and STACKS for both S. pistillata and P. verrucosa
+#Script to analyse diversity measurements obtained in PIXY and STACKS for both S. pistillata and P. verrucosa,
+#and to measure other diversity estimaties in R.
 
 library(dplyr)
+library(PopGenReport)
 
 ### Stylophora pistillata
 
 #Load PIXY output file containing pi values
-pi_pixy_Spis<-read.table("Spis_pixy_pi.txt",sep="\t",header=T)
+pi_pixy_Spis<-read.table("Spis_pixy_out.txt",sep="\t",header=T)
 
 #Filter by popualtion
 pi_pixy_Spis_Pelorus <- pi_pixy_Spis %>% filter(pop == "Pelorus")
@@ -35,10 +37,17 @@ sum(pi_pixy_Spis_Chicken$count_diffs[!is.na(pi_pixy_Spis_Chicken$count_diffs)]) 
 sum(pi_pixy_Spis_Moore$count_diffs[!is.na(pi_pixy_Spis_Moore$count_diffs)]) / sum(pi_pixy_Spis_Moore$count_comparisons[!is.na(pi_pixy_Spis_Moore$count_comparisons)])
 #0.01935028
 
+#Allelic richness
+Spis_metadata <- read.csv("Spis_metadata.csv")
+StyloTaxon1_genlight$pop <- Spis_metadata$locality
+SpisTaxon1_genind <- gl2gi(StyloTaxon1_genlight)
+SpisTaxon1_genind@pop <- as.factor(StyloTaxon1_metadata$locality)
+StyloTaxon1_AR <- allel.rich(SpisTaxon1_genind)
+
 ### Pocillopora verrucosa
 
 #Load PIXY output file containing pi values
-pi_pixy_Pver<-read.table("Pver_pixy_pi.txt",sep="\t",header=T)
+pi_pixy_Pver<-read.table("Pver_pixy_out.txt",sep="\t",header=T)
 
 pi_pixy_Pver_Pelorus <- pi_pixy_Pver %>% filter(pop == "Pelorus")
 pi_pixy_Pver_Moore <- pi_pixy_Pver %>% filter(pop == "Moore")
@@ -61,3 +70,9 @@ sum(pi_pixy_Pver_Chicken$count_diffs[!is.na(pi_pixy_Pver_Chicken$count_diffs)]) 
 sum(pi_pixy_Pver_Moore$count_diffs[!is.na(pi_pixy_Pver_Moore$count_diffs)]) / sum(pi_pixy_Pver_Moore$count_comparisons[!is.na(pi_pixy_Pver_Moore$count_comparisons)])
 #0.01004208
 
+#Allelic richness
+Pver_metadata <- read.csv("Pver_metadata.csv")
+Pver_genlight$pop <- Pver_metadata$locality
+PverSpisTaxon1_genind <- gl2gi(Pver_genlight)
+Pver_genind@pop <- as.factor(Pver_metadata$locality)
+Pver_AR <- allel.rich(Pver_genind)
