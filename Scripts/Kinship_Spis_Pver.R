@@ -2,11 +2,14 @@
 #and to calculate distances between identified kin individuals of S. pistillata
 
 #Create COLONY input S.pis
-StyloTaxon1_genlight <- gl.read.vcf("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/SpisTaxon1/StyloTaxon1_SF095_LD.vcf")
+StyloTaxon1_genlight <- gl.read.vcf("Spis_filtered.vcf")
 StyloTaxon1_tidy <- tidy_genlight(StyloTaxon1_genlight)
 StyloTaxon1_tidy_colony <- write_colony(StyloTaxon1_tidy)
 
-#Create COLONY input P.ver
+#Create COLONY input P. verrucosa
+PverTaxon1A_genlight <- gl.read.vcf("Pver_filtered.vcf")
+PverTaxon1A_tidy <- tidy_genlight(PverTaxon1A_genlight)
+PverTaxon1A_tidy_colony <- write_colony(PverTaxon1A_tidy)
 
 #Calculate individual distances between S.pis kins
 #For each pair, get coordinates from metatada and replace ind1Lon,ind1Lat and ind2Lon,ind2Lat in bellow lines
