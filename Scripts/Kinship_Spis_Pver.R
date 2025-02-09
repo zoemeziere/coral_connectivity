@@ -1,6 +1,10 @@
 #Script to create input files for COLONY, to perform kinship analyses, for both Stylopora pistillata and Pocillopora verrucosa, 
 #and to calculate distances between identified kin individuals of S. pistillata
 
+library(radiator)
+library(dartR)
+library(sf)
+
 #Create COLONY input S.pis
 StyloTaxon1_genlight <- gl.read.vcf("Spis_filtered.vcf")
 StyloTaxon1_tidy <- tidy_genlight(StyloTaxon1_genlight)
