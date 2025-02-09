@@ -1,6 +1,5 @@
 ###Script to perform population structure analyses on S. pistillata dataset
 
-###Required libraries
 library(adegenet)
 library(dartR)
 library(tidyr)
