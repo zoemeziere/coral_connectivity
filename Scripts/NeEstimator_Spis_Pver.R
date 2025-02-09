@@ -1,5 +1,7 @@
 #Script to create input files for NeEstimator, for both Stylopora pistillata and Pocillopora verrucosa
 
+library(dartR)
+
 ##Pocillopora verrucosa
 PverTaxon1A_genlight <- gl.read.vcf("Pver_filtered.vcf")
 PverTaxon1A_genlight_Ne <- PverTaxon1A_genlight
