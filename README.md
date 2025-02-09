@@ -10,13 +10,9 @@ Metadata files are accessible on the GEOME database under the following GUIDs:  
 
 ## Data folder ##
 
-### VCF folder ###
-
-The filtered VCF files used for all but the diversity analyses.
-
 ### Metadata folder ###
 
-Metadata files with information on all samples analysed in this study.
+Metadata files with information on all samples analysed in this study for both species, as well as sites and reefs coordinates used for making maps.
 
 ### Kinship folder ###
 
@@ -26,9 +22,17 @@ Output files of COLONY run to find close kins in Stylophora pistillata.
 
 Output files from PIXY and Stacks Populations with diversity estimates per population for both species.
 
+### ADMIXTURE folder ###
+
+Output files from ADMIXTURE analyses for both species.
+
 ### IBD folder ###
 
-Input files for isolation by distance analyes: census counts (census_numbers_Pver.csv, census_numbers_Spis.csv), spatial coordinates (lonlat_StyloTaxon1_pop.csv, Pver_lonlat.csv), Stylophora pistillata Taxon1 abundance (SpisTaxon1_abundance.csv), genepop input files (StyloTaxon1_genepop2.txt, PverTaxon1A_genepop2.txt)
+Input files for isolation by distance analyes: 
+  * census counts: `census_numbers_Pver.csv`, `census_numbers_Spis.csv`,
+  * spatial coordinates: `lonlat_StyloTaxon1_pop.csv`, `Pver_lonlat.csv`,
+  * S. pistillata cryptic taxa abundance: `SpisTaxon1_abundance.csv`,
+  * genepop input files: `StyloTaxon1_genepop2.txt`, `PverTaxon1A_genepop2.txt`
 
 Output files for isolation by distance analyes: genepop outputs (PverTaxon1A_genepop_1d_All_out.txt.GRA, StyloTaxon1_genepop_2d_0-10000m_out.txt.GRA, IBD_Pver.csv, IBD_Spis.csv), NeEstimator output files (StyloTaxon1_Ne_genepopLD.txt, PverTaxon1A_Ne_genepopLD_south.txt, PverTaxon1A_Ne_genepopLD_north.txt)
 
