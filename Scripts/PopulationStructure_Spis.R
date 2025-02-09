@@ -7,10 +7,11 @@ library(ggplot2)
 library(vegan)
 
 ###Genomic data and metadata
-StyloTaxon1_genlight <- gl.read.vcf("StyloTaxon1_SF095_LD.vcf")
-StyloTaxon1_metadata <- read.csv("StyloTaxon1_metadata.csv", header = TRUE) %>% arrange(Sample_name)
+StyloTaxon1_genlight <- gl.read.vcf("Spis_filtered.vcf")
+StyloTaxon1_metadata <- read.csv("Spis_metadata.csv", header = TRUE) %>% arrange(Sample_name)
 StyloTaxon1_metadata$locality <- factor(StyloTaxon1_metadata$locality, levels = c("Lizard", "Moore", "Pelorus", "Davies", "Chicken", "Little Broadhurst", "Heron", "Lady Musgrave"))
 StyloTaxon1_coordinates <- as.data.frame(cbind("lon" = StyloTaxon1_metadata$decimalLongitude, "lat" = StyloTaxon1_metadata$decimalLatitude))
+
 reefs_coords <- read.csv("reefs_coords.csv", header = TRUE)
 
 ###Principal Components Analyses
@@ -35,7 +36,7 @@ ggplot(as.data.frame(p$X), aes(Dim1, Dim2)) +
        y = paste0("PC2 (", signif(pve_StyloTaxon1$X100...PCA_StyloTaxon1.eig.1.10..sum.PCA_StyloTaxon1.eig.1.10..[2], 3), "%)"))
 
 ###ADMIXTURE
-StyloTaxon1_K9_admix <- read.table("StyloTaxon1_SF095_LD.9.Q") %>%
+StyloTaxon1_K9_admix <- read.table("Spis_filtered.9.Q") %>%
   cbind(StyloTaxon1_metadata, StyloTaxon1_K9_admix) %>% 
   gather(StyloTaxon1_K9_admix, key="V", value="probK9", 25:33)
 
