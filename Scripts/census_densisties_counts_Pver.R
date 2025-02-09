@@ -1,10 +1,7 @@
 # Riginos, April 2024
-# Set working directory to this script
-# Using Pocillopora verrucosa data from Zoe
 
 library(tidyverse)
 library(rethinking)
-setwd("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/IBD/CalculatingSigmaWithError")
 
 # Roadmap -----------------------------------------------------------------
 # Goal: To describe distributions related to the density of Pocillopora verrucosa from census data
@@ -14,7 +11,7 @@ setwd("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/IBD/Calcula
 # Read in files and prepare them ------------------------------------------
 
 # Read in data
-Pver_census_numbers <- read.csv("./census_numbers_Pver.csv") #read census numbers
+Pver_census_numbers <- read.csv("census_numbers_Pver.csv") #read census numbers
 
 # Consolidate to one data frame
 Pver_census_numbers_grp <- 
@@ -49,8 +46,8 @@ exp(precis(intercept_m )$sd) #1.030818
 
 #Posterior to be used as prior in sigma calculation
 Pver_counts_post<-extract.samples(intercept_m) #n= flag not working
-saveRDS(Pver_counts_post,"./Zoe_files/PosteriorPredictedDistributions/Pver_counts_post.RDS")
+saveRDS(Pver_counts_post,"Pver_counts_post.RDS")
 
-Pver_counts_post <- readRDS("./Pver_counts_post.RDS")
+Pver_counts_post <- readRDS("Pver_counts_post.RDS")
 
 #Go to dispersal_modeling_Pver.R   
