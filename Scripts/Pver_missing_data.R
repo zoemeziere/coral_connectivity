@@ -1,4 +1,5 @@
-#### Libraries ####
+#Additional analyses using datasets with less missing data for Pocillora verrucosa (<15% and <5% missing data)
+
 library(ggplot2)
 library(dartR)
 library(dplyr)
@@ -7,12 +8,12 @@ library(reshape2)
 
 #### Metadata ####
 
-PverTaxon1A_metadata <- read.csv("//Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/Metadata/PverTaxon1A_metadata.csv") %>% arrange(Sample_name)
+PverTaxon1A_metadata <- read.csv("Pver_metadata.csv") %>% arrange(Sample_name)
 PverTaxon1A_metadata$locality <- factor(PverTaxon1A_metadata$locality, levels = c("Flinders", "Lady Musgrave", "Heron", "Little Broadhurst", "Chicken", "Davies", "Pelorus", "Moore", "Lizard", "Masig", "Aukane", "Dungeness"))
 
-PverTaxon1A_080_genlight <- gl.read.vcf("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/MissingData/VCF/PverTaxon1A_SF080_LD_final.recode.vcf")
-PverTaxon1A_085_genlight <- gl.read.vcf("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/MissingData/VCF/PverTaxon1A_SF085_LD_final.recode.vcf")
-PverTaxon1A_095_genlight <- gl.read.vcf("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/MissingData/VCF/PverTaxon1A_SF095_LD_final.recode.vcf")
+PverTaxon1A_080_genlight <- gl.read.vcf("Pver_filtered.recode.vcf")
+PverTaxon1A_085_genlight <- gl.read.vcf("Pver_filtered_085.vcf")
+PverTaxon1A_095_genlight <- gl.read.vcf("Pver_filtered_095.vcf")
 
 #### PCA ####
 
@@ -56,7 +57,7 @@ ggplot(PCA_PverTaxon1A_095.df, aes(PC1, PC2, col= PverTaxon1A_metadata$locality)
 
 #### IBD slope ####
 
-PverTaxon1A_mercator <- read.csv("/Users/zoemeziere/Documents/PhD/Chapter2_analyses/PverTaxon1A/IBD/lonlat_Pver.csv")
+PverTaxon1A_mercator <- read.csv("lonlat_Pver.csv")
 
 # Missing data 0.80
 
