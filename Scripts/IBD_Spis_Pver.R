@@ -1,5 +1,8 @@
 #Script to create GenePopinput files to perform IBD analyses for both S. pistillata and P. verrucsa, and plot IBD regressions
 
+library(dartR)
+library(ggplot2)
+
 ####Stylophora pistillata
 
 ##Create input file for Genepop
