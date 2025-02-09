@@ -6,7 +6,7 @@ Raw sequence data is accessible on the NCBI SRA database under the following Bio
 
 Metadata files are accessible on the GEOME database under the following GUIDs:  https://n2t.net/ark:/21547/Fxv2, https://n2t.net/ark:/21547/FnE2, https://n2t.net/ark:/21547/FnE2.
 
-## Input data folder ##
+## Data folder ##
 
 ### VCF folder ###
 
