@@ -1,4 +1,4 @@
-# Data availability for "Connectivity differs by orders of magnitude among co-distributed corals, affecting spatial scales of eco-evolutionary processes #
+# Data availability for "Connectivity differs by orders of magnitude among co-distributed corals, affecting spatial scales of eco-evolutionary processes" #
 
 This repository contains all scripts and input data files required to run all analyses performed in Meziere et al., (2025).
 
